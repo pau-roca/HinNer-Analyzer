@@ -8,7 +8,7 @@ El projecte fa servir certes llibreries que haurien d'estar instal·lades abans 
 
 El projecte inclou els fitxers hm.py i hm.g4. Per generar la resta de fitxers feu servir la següent comanda:
 - antlr4 -Dlanguage=Python3 -no-listener -visitor hm.g4
-Un cop tenim tots els fitxers, podem executar l'aplicació streamlit amb aquesta altra comanda:
+<br /><br />Un cop tenim tots els fitxers, podem executar l'aplicació streamlit amb aquesta altra comanda:
 - streamlit run hm.py
 
 En cas que l'operand als tipus algebraics | no funcioni, hi ha una manera alterantiva de declarar els tipus just a sobre, comentants i amb un header #CASA. Aquesta alternativa requereix l'import 'from typing import Union' que també està comentat a dalt de tot.
@@ -17,11 +17,11 @@ En cas que l'operand als tipus algebraics | no funcioni, hi ha una manera altera
 Hi ha un camp de text gran on s'introduiran primer les declaracions de tipus i després l'expressió que s'ha d'avaluar.
 Els tipus els podem escriure cada un en una línia nova amb el format següent:
 - element :: tipus
-<br />Per exemple, per declarar que el nombre 2 és un natural, farem servir:
+<br /><br />Per exemple, per declarar que el nombre 2 és un natural, farem servir:
 - 2 :: N
-<br />I per dir que (+) pren dos naturals i en retorna un altre, farem servir:
+<br /><br />I per dir que (+) pren dos naturals i en retorna un altre, farem servir:
 - (+) :: N -> N -> N
-<br />Els tipus no poden incloure parèntesis, les constants als tipus han de començar amb majúscula.
+<br /><br />Els tipus no poden incloure parèntesis, les constants als tipus han de començar amb majúscula.
 
 L'expressió s'ha d'introduir a la línia després dels tipus, en notació prefixa en l'estil següent:
 - \x -> \y -> (+) x y
